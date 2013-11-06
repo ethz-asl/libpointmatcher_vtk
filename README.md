@@ -1,4 +1,4 @@
-libpointmatcher_vtk
+libpointmatcher to VTK
 ===================
 
-Conversion between libpointmatcher and vtk data structures
+Library containing conversion functions between libpointmatcher and vtk data structures.
