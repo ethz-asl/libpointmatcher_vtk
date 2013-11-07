@@ -2,13 +2,13 @@ cmake_minimum_required(VERSION 2.8.8)
 project(pointmatcher_vtk)
 
 # Paraview
-find_package(ParaView 3.98 REQUIRED COMPONENTS vtkPVPythonCatalyst)
+find_package(ParaView 3.98 REQUIRED COMPONENTS vtkPVPythonCatalyst vtkRenderingFreeTypeOpenGL vtkInteractionStyle)
 include("${PARAVIEW_USE_FILE}")
 
 # libpointmatcher
 find_package(pointmatcher 1.1.0 REQUIRED)
 include_directories("${POINTMATCHER_INCLUDE_DIRS}")
-message("Using libpointmatcher version ${pointmatcher_VERSION}")
+message(STATUS "Using libpointmatcher version ${pointmatcher_VERSION}")
 
 
 include_directories(include)

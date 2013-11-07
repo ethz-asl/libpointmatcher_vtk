@@ -110,9 +110,9 @@ vtkSmartPointer<vtkPolyData> pointMatcherCloudToPolyData(const typename PointMat
 }
 
 template
-vtkSmartPointer<vtkPolyData> pointMatcherCloudToPolyData<float>(const typename PointMatcher<float>::DataPoints& pmCloud);
+vtkSmartPointer<vtkPolyData> pointMatcherCloudToPolyData<float>(const PointMatcher<float>::DataPoints& pmCloud);
 template
-vtkSmartPointer<vtkPolyData> pointMatcherCloudToPolyData<double>(const typename PointMatcher<double>::DataPoints& pmCloud);
+vtkSmartPointer<vtkPolyData> pointMatcherCloudToPolyData<double>(const PointMatcher<double>::DataPoints& pmCloud);
 
 // Convert path to vtk a polydata line
 template<typename T>
@@ -203,9 +203,9 @@ vtkSmartPointer<vtkPolyData> transParametersToPolyData(const std::vector< typena
 }
 
 template
-vtkSmartPointer<vtkPolyData> transParametersToPolyData<float>(const std::vector< typename PointMatcher< float >::TransformationParameters > path);
+vtkSmartPointer<vtkPolyData> transParametersToPolyData< float > (const std::vector<  PointMatcher< float >::TransformationParameters > path);
 template
-vtkSmartPointer<vtkPolyData> transParametersToPolyData<double>(const std::vector< typename PointMatcher< double >::TransformationParameters > path);
+vtkSmartPointer<vtkPolyData> transParametersToPolyData<double>(const std::vector<  PointMatcher< double >::TransformationParameters > path);
 
 
 
